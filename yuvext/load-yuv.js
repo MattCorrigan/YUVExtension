@@ -190,7 +190,7 @@ function getExtension(url) {
 function process() {
 	
 	// look for yuv images in the html
-	var all_images = document.getElementsByTagName("img");
+	var all_images = Array.from(document.getElementsByTagName("img"));
 
 	for (var i = 0; i < all_images.length; i++) {
 		var image = all_images[i];
